@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>RadioPEMB</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+    <div class="item1">
+        
+        <h1>Pujant Per L'Escala Mecanica De Baixada</h1>
+        
+        
+    </div>
+    <div class="item2">
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" >Inici</a>
+        <a href="noticies.html" >Noticies</a>
+        <a href="contacte.html" >Contacte</a>
+        <a href="https://www.infosalt.cat/radio-salt/" target="_blank" >Radio</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+     <script src="js/scripts.js"></script>
+
+  
+
+
+</div>
+
+
+<div class="item3"> 
+ 
+
+  
+      
+      <img src="img/radio.png" alt=""> 
+  
+   
+       <p> Tots els dilluns a les 22:00hrs
+        Sintonitza els millors grups només per aquesta estació </p>
+ 
+        <p>Punxa al botó per escoltar Ràdio Salt en directe</p>
+        <button class="cteboton"><a href="https://www.infosalt.cat/radio-salt/" target="_blank">Radio salt</a></button>
+  
+
+       </div>
+     
+
+
+    <div class="item4">
+       
+        <div class="w3-container">
+            <h2>Part de la programació</h2>
+            <p>Grups com Chameleons, Killing joke, Depeche Mode entre d'altres
+            </p>
+          </div>
+          
+          <div class="w3-content" style="max-width:1200px">
+            <img class="mySlides" src="img/c.jpg" style="width:100%;display:none">
+            <img class="mySlides" src="img/kj.jpg" style="width:100%">
+            <img class="mySlides" src="img/dp.jpg" style="width:100%;display:none">
+          
+            <div class="w3-row-padding w3-section">
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="img/c.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+              </div>
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="img/kj.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+              </div>
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="img/dp.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+              </div>
+            </div>
+          </div>
+          <script >
+            function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-opacity-off";
+  }
+          </script>
+        
+    </div>
+    <div class="item5">
+        <footer> <p>
+            Enric Casadevall </p>
+            <p>Radio Salt 97.7FM</p>
+            
+            
+        </footer>
+    </div>
+    </div>
+</body>
+</html>
