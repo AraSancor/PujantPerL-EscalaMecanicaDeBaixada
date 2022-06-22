@@ -1,8 +1,8 @@
 :root {
-    --color-uno: #0f0f0f;
-    --color-dos: #030118;
-    --color-tres: #4899e4;
-    --color-cuatro: #eaee09;
+    --color-uno: #000000;
+    --color-dos: #F15412;
+    --color-tres: #34B3F1;
+    --color-cuatro: #EEEEEE;
   }
 
   * {box-sizing: border-box}
@@ -13,11 +13,13 @@ body{
   .container {
     display: grid;
     grid-template-areas:
-      "header header"
+     
       "menu menu"
+       "header header"
       " aside main"
       "footer footer";
   }
+  
 
   .item1 {
     grid-area: header;
@@ -25,23 +27,23 @@ body{
     color: var(--color-cuatro);
     background-color: var(--color-dos);
     opacity: 0.9;
+    display: flex;
     
   }
-  .item1 h1
-{
-  margin-right: 3%;
-}  
+  
   .item2 {
     grid-area: menu;
-  
-  
+   
     
   }
   
   .item3 {
 grid-area: aside;
-    
+
+
    }
+
+   
    
  .item4{
   grid-area: main;}
@@ -55,7 +57,7 @@ grid-area: aside;
   }
   
   .cteboton{
-    background-color: var(--color-dos);
+    background-color: var(--color-uno);
   
   }
   .cteboton a{
@@ -65,23 +67,34 @@ grid-area: aside;
  
 
   @media only screen and (min-width: 200px) and (max-width: 1200px) {
+    body{
+      margin: 1%;
+    }
     .container {
       display: grid;
       grid-template-areas:
+       
+        "menu" 
         "header"
-        "menu"
         "aside"
         " main"
         "footer";
     }
-   
+   .item1{
+    display: block;
+    padding: 0;
+
+   }
+   .item1 h1,p {
+    font-size: 5vw;
+   }
     p, h3{
-      margin: 3%;
+      margin: 1%;
       font-size: 3vw;
     }
     .cteboton{
      font-size: 4vw;
-  margin-left: 40%;
+ margin: 3%;
   padding: 1%;
 
     }
@@ -102,6 +115,15 @@ grid-area: aside;
       padding: 3%;
     
     }
+    .item3{
+      background-color: var(--color-uno);
+      color: var(--color-cuatro);
+      text-align: center;
+    }
+    .item4 p{
+      margin: 3%;
+    }
+    
    
 
   }
@@ -112,21 +134,23 @@ grid-area: aside;
   @media only screen and (min-width: 1201px) and (max-width: 3800px) {
   
     body{
+      margin: 1%;
       font-size: 1.5vw;
+      width: 95vw;
     }
   
     .container {
       display: grid;
       grid-template-areas:
+       "menu menu"
       "header header"
-      "menu menu"
       " aside main"
       "footer footer";
     }
  
     .cteboton{
-      font-size: 3vw;
-    margin-left: 34%;
+      font-size: 2vw;
+
 
     }
     .map{
@@ -141,14 +165,35 @@ grid-area: aside;
      
     }
       p, h3{
-      margin: 3%;
+     
       font-size: 2vw;
     }
+    .div1{
+      margin-left: 50px;
+    }
+  
     .item3 img{
+
       width: 33vw;
-      margin-left:14%;
-      padding: 3%;
+      margin: 3%;
+      padding-left: 10%;
+      opacity: 0.8;
+    }
+    .item3 h1{
+      padding-left: 10%;
+    }
+
+    .item3{
+      text-align: justify;
+      margin: 2%;
+    }
     
+    .item4{
+      margin: 2%;
+    }
+    .item4 p, h2{
+      padding-left: 5%;
+      padding-right: 5%;
     }
   
   }
