@@ -14,13 +14,17 @@
 <body>
   <div class="container">
     <div class="item1">
-<div><h1>Pujant Per L'Escala Mecànica De Baixada</h1>
-      <p> Tots els dilluns a les 22:00hrs </p></div>
+      <div class="div2">
+      <h1>  <b>Pujant Per L'Escala Mecànica De Baixada</b></h1>
+        <p> Tots els dilluns a les 22:00hrs </p>
+      </div>
 
-     <div class="div1"><p>Punxa al botó per escoltar Ràdio Salt en directe</p>
-      <button class="cteboton"><a href="https://www.infosalt.cat/radio-salt/" target="_blank">Radio salt 97.7 FM</a></button>
-</div> 
+      <div class="div1">
       
+        <button class="cteboton"><a href="https://www.infosalt.cat/radio-salt/" target="_blank">Radio salt 97.7
+            FM</a></button>
+      </div>
+
     </div>
     <div class="item2">
       <div class="topnav" id="myTopnav">
@@ -34,26 +38,32 @@
       </div>
 
       <script src="js/scripts.js"></script>
-
-
-
-
     </div>
 
 
     <div class="item3">
-     
-      
-      <div >
-        <img src="e.jpg" alt="">
+
+
+      <div>
+        <img class="imgi3" src="enr.jpg" alt="">
         <h1>Enric Casadevall</h1>
         <p>Locutor independent actiu des del 1987.</p>
+        <div class="redes">
+
+          <div><a href="https://www.instagram.com/casadevallbabores/?hl=es" target="_blank"><img src="img/ista.jpg"
+              alt=""></a></div>
+          <div><a href="https://es-es.facebook.com/enric.casadevallbabores" target="_blank"> <img src="img/face.jpg"
+              alt=""></a></div>
+          
+          
+        </div>
+
       </div>
 
 
 
 
-     
+
 
 
     </div>
@@ -62,36 +72,77 @@
 
     <div class="item4">
 
-     
-<div>
-  
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="img/dm.jpeg" style="width:100%">
-  <img class="mySlides" src="img/kj.jpg" style="width:100%">
-  <img class="mySlides" src="img/Pixies.jpg" style="width:100%">
-  <img class="mySlides" src="img/ian-mcculloch.jpg" style="width:100%">
-  <img class="mySlides" src="img/bloody.jpg" style="width:100%">
-  <img class="mySlides" src="img/radio.png" style="width:100%">
-</div>
-  
-  <script>
-       var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+      <div>
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">Pujant Per L'Escala Mecànica De Baixada</div>
+            <img src="img/ian-mcculloch.jpg" style="width:100%">
+            <div class="text">Ian-Mcculloch</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">Pujant Per L'Escala Mecànica De Baixada</div>
+            <img src="img/Pixies.jpg" style="width:100%">
+            <div class="text">Pixies</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">Pujant Per L'Escala Mecànica De Baixada</div>
+            <img src="img/kj.jpg" style="width:100%">
+            <div class="text">killing joke</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">Pujant Per L'Escala Mecànica De Baixada</div>
+            <img src="img/dm.jpeg" style="width:100%">
+            <div class="text">Depeche Mode</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">Pujant Per L'Escala Mecànica De Baixada</div>
+            <img src="img/bloody.jpg" style="width:100%">
+            <div class="text">Bloody</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+
+        <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
-      </script></div>
-     
-       <div >
+        </script>
+      </div>
+
+      <div>
         <h2>Part de la programació</h2>
         <p>"PUJANT PER L'ESCALA MECÀNICA DE BAIXADA" MÚSICA INDEPENDENT 80'S 90'S 00'S THE SMITHS, THE SOUND, THE
           CHAMELEONS... PIXIES, SONIC YOUTH, PAVEMENT... ARCTIC MONKEYS, ARCADE FIRE, KASABIAN... entre d'altres
