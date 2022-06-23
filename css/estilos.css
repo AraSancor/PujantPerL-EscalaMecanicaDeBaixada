@@ -139,7 +139,7 @@ body {
 
   }
 .item3 {
-    text-align: center;
+   text-align: center;
   }
   .imgi3 {
     width: 50vw;
@@ -151,8 +151,11 @@ body {
   
   .item3n{
    margin: 3%;
-   padding: 5%;
+  
    font-size: 5vw;
+   text-align: left;
+   padding-right: 10%;
+   padding-left: 10%;
   }
   .item3n a{
     font-size: 4vw;
@@ -163,9 +166,7 @@ body {
   width: 50vw;
 }
 
-.item4{
-  text-align: center;
-}
+
   .item4 p {
     margin: 3%;
   }
@@ -266,15 +267,18 @@ body {
     margin: 3%;
   }
   .item3n{
+    text-align: justify;
     margin-left: 10%;
   }
   .item3n a{
     font-size: 2vw;
     text-decoration: none;
     color: var(--color-dos);
+    
    }
 .item3n img{
-  width: 20vw;
+  width: 40vw;
+  margin: 3%;
 }
   .item4 {
     margin: 3%;
