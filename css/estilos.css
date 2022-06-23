@@ -161,7 +161,10 @@ body {
     font-size: 3vw;
   }
 
-
+  iframe{
+    margin: 5%;
+    width: 85vw;
+  }
 
 }
 
@@ -261,6 +264,10 @@ body {
   }
   .numbertext{
     font-size: 2vw;
+  }
+  iframe{
+ height: 30vw;
+    width: 50vw;
   }
 
 }
