@@ -6,7 +6,7 @@
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
@@ -47,8 +47,6 @@ body {
 
 .item3 {
   grid-area: aside;
-
-
 }
 
 
