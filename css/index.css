@@ -22,7 +22,6 @@ body {
 
 
 
-
 .container {
   display: grid;
   grid-template-areas:
@@ -233,6 +232,7 @@ body {
     background-image: url("../img/microphonecover.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
+    text-align: center;
   }
 
   #div-cookies {
@@ -260,20 +260,13 @@ body {
     grid-template-areas:
       "menu menu"
       "header header"
-      " aside main"
+      " aside aside "
+      " main  main"
       "footer footer";
   }
 
   .cteboton {
-    font-size: 2vw;
-
-
-  }
-
-  .map {
-    padding: 2%;
-    width: 40vw;
-    height: 20vw;
+    font-size: 2rem;
   }
 
   .redes {
@@ -286,43 +279,37 @@ body {
     width: 11vw;
     height: 7vw;
     margin-bottom: 5%;
-
-
   }
 
   p,
   h3 {
-
-    font-size: 1.4vw;
+    font-size: 2rem;
   }
 
   .div1 {
     margin: 3%;
-
-
   }
 
   .div2 {
-    width: 70vw;
+    padding: 2%;
   }
 
   .item1 {
-    padding: 1% 2% 1% 5%;
-    width: 95vw;
+    padding: 1% ;
+    
   }
 
   .item1 h1 {
-    font-size: 6vw;
+    font-size: 3rem;
   }
 
   .imgi3 {
-    width: 30vw;
-    margin: 3%;
-    padding: 10%;
+      width: 33vw;
+   height: 33vw;
     opacity: 0.8;
   }
 
-  .item3 h1,
+   .item3 h1,
   h3,
   p,
   a {
@@ -330,12 +317,13 @@ body {
   }
 
   .item3 {
-    text-align: justify;
-    width: 40vw;
-    margin: 3%;
+    padding: 3%;
+   margin-left: 11%;
     grid-gap: 10%;
   }
-
+ .flexbox{
+    display: flex;
+  }
 
   .item3n {
 
@@ -360,12 +348,12 @@ body {
   }
 
   .slideshow-container {
-    width: 50vw;
-    height: 38vw;
+    width: 100vw;
+    
   }
 
   .slideshow-container img {
-    height: 30vw;
+    height: 50vw;
   }
 
   .text {
