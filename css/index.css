@@ -6,13 +6,13 @@
 }
 
 * {
-  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body { 
+body {
 
   font-family: sans-serif;
   background-color: var(--color-uno);
@@ -33,6 +33,9 @@ body {
     "footer footer";
 }
 
+.imgi3 {
+  border-radius: 50%;
+}
 
 .item1 {
   grid-area: header;
@@ -100,7 +103,7 @@ body {
       "menu"
       "header"
       "aside"
-     "main"
+      "main"
       "footer";
   }
 
@@ -148,7 +151,7 @@ body {
   }
 
   .map {
-margin: 1%;
+    margin: 1%;
     width: 95vw;
     height: 50vw;
   }
@@ -157,10 +160,11 @@ margin: 1%;
     margin-left: 5%;
     grid-gap: 10px;
   }
+
   .redes img {
     width: 25vw;
     height: 16vw;
-   }
+  }
 
   .item3 {
     opacity: 0.9;
@@ -169,12 +173,12 @@ margin: 1%;
 
   .imgi3 {
     width: 50vw;
-   padding: 3%;
+    padding: 3%;
   }
 
-  .item3n  {
+  .item3n {
     margin: 3%;
-padding: 10% 1% 2% 1%;
+    padding: 10% 1% 2% 1%;
     font-size: 5vw;
     text-align: left;
 
@@ -189,18 +193,22 @@ padding: 10% 1% 2% 1%;
   .item3n img {
     width: 50vw;
   }
-.item4{
-  margin: 10% 2% 2% 0;
-}
 
-  .item4 h2, p {
+  .item4 {
+    margin: 10% 2% 2% 0;
+  }
+
+  .item4 h2,
+  p {
     margin: 3%;
   }
-  .slideshow-container{
+
+  .slideshow-container {
     width: 100vw;
     height: 80vw;
 
   }
+
   .text {
     font-size: 3vw;
   }
@@ -225,7 +233,7 @@ padding: 10% 1% 2% 1%;
     background-image: url("../img/microphonecover.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
-   }
+  }
 
   #div-cookies {
     position: fixed;
@@ -240,10 +248,12 @@ padding: 10% 1% 2% 1%;
     text-align: left;
     padding-left: 8%;
   }
+
   .topnav {
     padding-left: 33%;
-    
+
   }
+
   .container {
 
     display: grid;
@@ -300,9 +310,10 @@ padding: 10% 1% 2% 1%;
     padding: 1% 2% 1% 5%;
     width: 95vw;
   }
-.item1 h1{
-  font-size: 6vw;
-}
+
+  .item1 h1 {
+    font-size: 6vw;
+  }
 
   .imgi3 {
     width: 30vw;
@@ -311,19 +322,23 @@ padding: 10% 1% 2% 1%;
     opacity: 0.8;
   }
 
-  .item3 h1, h3, p, a {
+  .item3 h1,
+  h3,
+  p,
+  a {
     padding-left: 10%;
   }
 
   .item3 {
     text-align: justify;
     width: 40vw;
-    margin: 3%;  
-    grid-gap: 10% ;
+    margin: 3%;
+    grid-gap: 10%;
   }
 
+
   .item3n {
-  
+
     text-align: justify;
     padding: 10%;
   }
@@ -334,19 +349,23 @@ padding: 10% 1% 2% 1%;
     color: var(--color-tres);
 
   }
-.item4{
-  margin-top: 10%;
-}
+
+  .item4 {
+    margin-top: 10%;
+  }
+
   .item3n img {
     width: 40vw;
     margin: 3%;
   }
-  .slideshow-container{
+
+  .slideshow-container {
     width: 50vw;
     height: 38vw;
   }
-  .slideshow-container img{
-    height: 30vw ;
+
+  .slideshow-container img {
+    height: 30vw;
   }
 
   .text {
